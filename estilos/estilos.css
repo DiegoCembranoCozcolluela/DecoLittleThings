@@ -1,0 +1,677 @@
+/* Declaración de codificación de caracteres */
+@charset "utf-8";
+
+/* Inicio del Documento CSS */
+
+/* RESET */
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Rancho';
+}
+
+/* Header */
+
+header{
+	height: 100px;
+	background: rgba(15, 213, 253, 0.886);
+	padding: 0 50px;
+	color: #FFF;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#img_logo{
+	width: 100px;
+	height: 100px;
+}
+
+.logo{
+	text-transform: uppercase;
+	color: black;
+	font-weight: 200;
+}
+
+.menu a{
+	color: #FFF;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 10px;
+	transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu{
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+	transition: 0.4s;
+}
+
+.mostrar-menu{
+	order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+	color: black;
+}
+
+#check{
+	display: none;
+}
+
+/* Banner */
+
+#banner{
+	padding: 0 50px;
+	background-image: url(../img/banner.jpg);
+	height: 45vh;
+	background-size: cover;
+	background-position: center;
+
+}
+
+#banner::before{
+	content: '';
+	background: rgba(77, 77, 92, 0.6);
+	position: absolute;
+	width: 100%;
+	height: 45vh;
+	left: 0;
+}
+
+.contenido-banner{
+	position: relative;
+	color: #FFF;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.contenido-banner h3{
+	font-size: 30px;
+	font-weight: 400;
+	padding: 10px 0px;
+}
+
+.contenido-banner h3 span{
+	font-weight: 600;
+}
+
+.boton-empezar{
+	text-decoration: none;
+	color: #FFF;
+	border: 1px solid  rgba(15, 213, 253, 0.886);
+	padding: 20px 40px;
+	align-self: baseline;
+	transition: all 0.4s;
+}
+
+.boton-empezar:hover{
+	background:  rgba(15, 213, 253, 0.6);
+}
+
+/* Seccion 2 */
+
+.catalogo3,
+.catalogo2{
+	padding: 10px 10px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+.mesero, .portalianzas, .letra, .marco, .espejo, .aro, .portavelas, .marcasitios, .taza{
+	flex: 350px;
+}
+
+#filtros{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+#botones{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.buttons{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 220px;
+	height: 100px;
+}
+
+.buttons .style{
+	display: block;
+   margin-left: 60px;
+  }
+.buttons .style button{
+	position: relative;
+	width: 150px;
+	margin: 40px 0;
+	color: #fff;
+	font-size: 15px;
+	outline: none;
+	display: block;
+	height: 55px;
+	font-weight: 800;
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+	cursor: pointer;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	transition: all 0s ease-out;
+}
+
+.enlaceswalla{
+	text-decoration: none;
+}
+
+.style button.buttonwallapop,
+.style button.buttonwallapop span{
+	background: #3b9977;
+	border-left: 1px solid #2e766b;
+	box-shadow: 0px 5px 0px 0px #2e766b;
+}
+  
+.style button.buttonwallapop:active{
+	box-shadow: 0px 2px 0px 0px #2e766b;
+}
+
+.style button.buttonwallapop span{
+    border-right:1px solid #2e4476;
+}
+
+.style button.buttonwallapop:active span{
+    box-shadow:0px 5px 0px 0px #2e4476,
+    6px 4px 2px rgba(0,0,0,0.3);
+}
+
+.wallapop2{
+	height: 55px;
+    width: 55px;
+}
+
+.style button:active{
+	top: 3px;
+}
+
+
+.style button span{
+    position: absolute;
+    left: -60px;
+    line-height: 55px;
+    font-size: 25px;
+    display: block;
+    font-weight: normal;
+    height: 55px;
+    width: 60px;
+    top: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+
+.style button:active span{
+    top: -3px;
+}
+
+.catalogo {
+	position:flex;
+	margin-left: 220px;
+	margin-right: 100px;
+	width: 1100px;
+}
+
+.img_catalogo1 {
+	padding: 5px;
+	width: 250px;
+	height: 270px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 2px solid rgb(44, 224, 80);
+	border-radius: 4px;
+}
+
+.img_catalogo1:hover {
+	box-shadow: 0 0 8px 4px rgb(13, 121, 34);
+}
+
+.img_catalogo2 {
+	padding: 5px;
+	width: 300px;
+	height: 250px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 2px solid rgb(44, 224, 80);
+	border-radius: 4px;
+}
+
+.img_catalogo2:hover {
+	box-shadow: 0 0 8px 4px rgb(13, 121, 34);
+}
+
+/* Seccion 3 */
+
+.pagcontacto{
+	padding: 10px 50px;
+	justify-content: center;
+	text-align: center;
+}
+
+#div_formulario{
+	height: 850px;
+	border: 1px solid black;
+	margin: 8px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	background-color:#FFFFFF;
+}
+
+.boton_form {
+	text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+	text-align:center;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	display:inline-block;
+	color: #FFF;
+	background: #7abcff; 
+	padding: 6px 30px;
+	white-space: nowrap;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	margin: 10px 5px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.morado{
+	background: #7abcff;
+	border: 1px solid #1488FF; 
+}
+
+.morado:hover{
+ 	background: #ADD5FF;
+}
+
+.caja_gris{
+	margin: 0 0 5px;
+	overflow: hidden;
+	padding: 4px;
+	background-color: #F2F2F2;
+	border: 1px solid #6E6E6E;
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+}
+
+.formulario_contacto{
+	position:relative;
+}
+
+/* Footer */
+
+#footer{
+	padding: 0px 50px;
+	background: rgba(15, 213, 253, 0.886);
+}
+
+.contenido-footer{
+	padding: 50px 50px 0px 50px;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.contenido-footer div{
+	flex: 1;
+	margin: 20px 20px 20px 0px;
+	border-right: 2px solid rgba(30, 20, 223, 0.756);
+}
+
+#contenido-footer3{
+	border: none;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+	.mostrar-menu,
+	.esconder-menu{
+		display: block;
+	}
+
+	.menu{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(15, 213, 253, 0.9);
+		right: -100%;
+		top: 0;
+		text-align: center;
+		padding: 100px 0px;
+		z-index: 100;
+		transition: 0.8s;
+	}
+
+	.menu a{
+		display: block;
+		padding: 20px;
+	}
+
+	.esconder-menu{
+		position: absolute;
+		top: 40px;
+		right: 40px;
+	}
+
+	#check:checked ~ .menu{
+		right: 0;
+	}
+
+	.catalogo3,
+	.catalogo2{
+		flex-direction: column;
+	}
+
+	.pagcontacto{
+		flex-direction: column;
+	}
+
+	.contenido-footer{
+		flex-direction: column;
+	}
+	.contenido-footer div{
+		border: none;
+	}
+}
+
+
+
+
+
+/* Estilo del fondo de la página */
+
+html, body {
+	/* background: url(../img/fondo.png) no-repeat top center fixed; */
+	background-color: white;
+	background-size: 100%;
+	box-sizing: border-box;
+}
+
+/* Modificación de comportamiento de los enlaces */
+
+a,a:visited{
+	text-decoration: none;
+}
+
+/* Modificación del tamaño de letra del encabezado 0 */
+h4 {
+	font-size: 80px;
+	color: darkorange;
+	font-family: 'Rancho';
+}
+
+/* Modificación del tamaño de letra del encabezado 1 y 2 */
+h1 {
+	font-size: 50px;
+	font-family: 'Rancho';
+}
+
+h2 {
+	font-size: 35px;
+	font-family: 'Rancho';
+}
+
+/* Modificación del tipo de letra de los encabezados */
+
+h1,h2 {
+	font-family: 'Rancho';
+	color: black;
+}
+
+h5 {
+	color: black;
+	font-size: 25px;
+	font-family: 'Rancho';
+}
+
+/* Modificación del comportamiento de los párrafos */
+
+p {
+	text-align: justify;
+	color: black;
+	font-size: 20px;
+	line-height: 150%;
+	font-family: 'Rancho';
+}
+
+/*Div que contiene la página*/
+
+.div_contenedor{
+	position:relative;
+	clear:both;
+	margin:0 auto;
+	padding:0px;
+	font-size:13px;
+	color:#3c3c3c;
+	font-family: Helvetica, sans-serif;
+	background-size:100% auto;
+	line-height:18px;
+}
+
+.div_contenedor section{
+	display:inline;
+}
+
+/*Div que contiene la parte central de la página*/
+
+#div_seccion_principal{
+	height:auto;
+	margin-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+}
+
+/*Div de la cabecera de la página*/
+
+#div_header{
+	clear:both;
+	box-sizing:border-box;
+	border:solid;
+	border-width:10px;
+	border-color:transparent;
+	position:center;
+	height: 200px;
+}
+
+#div_header img{
+	width: 190px;
+	height: 190px;
+	float:left;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-left: 300px;
+}
+
+/*Div del pie de página*/
+
+.footer {
+	background-color: #ff8dfd;
+	box-sizing: border-box;
+
+}
+
+#div_footer { 
+	font-size:20px;
+	position:relative;
+	box-sizing:border-box;
+	clear:both;
+	color: black;
+	text-align:center;
+	padding: 30px;
+	margin: 8px;
+}
+
+#datos {
+	background-color: #ffc6fc;
+}
+
+.table_datos {
+	margin-left: 335px;
+	width: 1000px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: black;
+	font-size: 20px;
+	font-family: 'Rancho';
+}
+
+/* Div del menú de la página */
+
+.div_menu {
+	text-align:center;
+	margin-top: 60px;
+	margin-left:5px;
+	text-decoration: none;
+	font-family: 'Rancho';
+	font-size: xx-large;
+	color:black;
+}
+
+
+/* Estilos comunes de los botones de navegación */
+
+.boton,.boton:hover,.botonin,.botonin:hover {
+	text-shadow: 2px 1px rgba(30, 20, 223, 0.756);
+	text-align:center;
+	display:inline-block;
+	width: 150px;
+	padding: 5px 30px ;
+	white-space: nowrap;
+	margin: 5px 5px 10px;
+}
+
+/* Estilos independientes de los botones de navegación */
+
+.boton{
+	background: transparent;
+}
+
+.boton:hover{
+	text-decoration-color: chartreuse;
+}
+
+
+.botonin {
+	background: transparent;
+}
+
+.botonin:hover{
+	text-decoration-color: chartreuse;
+}
+
+.boton.active, .botonin.active{
+	color: red;
+}
+
+
+/* Estilo de imágenes cuadradas */
+
+#imagen_der {
+	width: 500px;
+	height: 500px;
+	float:right;
+	margin-left: 20px;
+	border: 1px solid rgb(44, 224, 80);
+	border-radius: 4px;
+	padding: 5px;
+}
+
+#imagen_der:hover {
+	box-shadow: 0 0 8px 4px rgb(13, 121, 34);
+}
+
+
+
+.logo_redes1 {
+	width: 100px;
+	height: 70px;
+	margin: 10px;
+}
+.logo_redes2 {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+}
+.logo_redes3 {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+}
+.logo_redes4 {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+}
+
+
+/****************************************************/
+/*  Imagen de la portada con el hover gris y texto */ 
+/****************************************************/
+
+div#raro {
+	width: 500px;
+	height: 460px;
+	float:left;
+	margin-left: 10px;
+	margin-right:20px;
+	border: 1px solid rgb(44, 224, 80);
+	border-radius: 4px;
+	padding: 5px;
+	background-image: url(../img/portada2.jpg);
+}
+
+div#raro2 {
+	width: 500px;
+	height: 460px;
+	float:left;
+	background-color: rgba(120, 113, 113, 0.9);
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+
+div#raro:hover div#raro2 {
+	opacity: 1;
+}
+
+div#raro:hover {
+	box-shadow: 0 0 8px 4px rgb(13, 121, 34);
+}
+
+p#raro3 {
+	color: aliceblue;
+	font-size: 40px;
+	margin-left: 80px;
+}
+
+
+
+
+
+
