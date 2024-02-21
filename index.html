@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+            <!-- Declaración de las meta-etiquetas -->
+        <meta charset="UTF-8" />
+        <meta name="description" content="Página web sobre Deco Little Things" />
+        <meta name="robots" content="NOFOLLOW" />
+        <meta name="Author" content="Diego" />
+        <meta name="keywords" content="Decoración, Flores" />
+        <meta name="lang" content="es" />
+        <meta name="revisit-after" content="10 days" />
+        <meta name="category" content="Spanish, Spain, Deco Little Things" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="icon" type="image/png" href="img/favicon.png" />
+		
+            <!-- Declaración de fichero de estilos -->
+        <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+		<link rel="stylesheet" type="text/css" href="estilos/fonts.css">
+			<!-- Declaración de fichero de javascript -->
+		<script type="text/javascript" src="javascript/javascript.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="javascript/jquery.slides.min.js"></script>
+        <title>Deco Little Things</title>
+    </head>
+
+    <body onload="cargarSeccion(1)">
+			<header>
+				<!-- <img src="img/logo.png" id="img_logo" alt="imagen de logo" title="imagen de logo"> -->
+				<h2 class="logo"><a style="text-decoration: none; color: black;" href="#" onclick="cargarSeccion(1)">Deco Little Things</a></h2>
+				<input type="checkbox" id="check">
+				<label for="check" class="mostrar-menu">
+					&#8801
+				</label>
+
+				<nav class="menu">
+					<a href="#" onclick="cargarSeccion(1)">Inicio</a>
+					<a href="#" onclick="cargarSeccion(2)">Catálogo</a>
+					<a href="#" onclick="cargarSeccion(3)">Contacto</a>
+					<label for="check" class="esconder-menu">
+						&#215
+					</label>
+				</nav>
+			</header>
+
+			<section id="banner">
+				<!-- Div que tiene el banner -->
+				<div class="contenido-banner">
+					<h3><span>Deco Little Things: </span>Decoración floral <br> Perosnalizada</h3>
+					<a href="#" class="boton-empezar" onclick="cargarSeccion(2)">EMPEZAR</a>
+				</div>
+			</section>
+
+			<section id="">
+				<!-- Div que tiene todo el contenido de la página principal -->
+				<div id="div_seccion_principal">
+				</div>
+			</section>
+
+			<footer id="footer">
+				<!-- Div que tiene todo el contenido del footer -->
+				<div class="contenido-footer">
+					<div>
+						<p>ENVIO Y PAGO</p>
+						<p style="color: grey;">Envio por Wallapop</p>
+						<p style="color: grey;">Pago por Wallapop</p>
+						<p><a style="color: grey;" href="#" onclick="cargarSeccion(4);">Envío y devolución</a></p>
+					</div>
+					<div>
+						<p>INFORMACIÓN</p>
+						<p><a style="color: grey;" href="#" onclick="cargarSeccion(5);">Política de privacidad</a></p>
+						<p><a style="color: grey;" href="#" onclick="cargarSeccion(6);">Preguntas frecuentes</a></p>
+						<p><a style="color: grey;" href="#" onclick="cargarSeccion(2);">Catálogo</a></p>
+					</div>
+					<div id="contenido-footer3">
+						<p>DECO LITTLE THINGS</p>
+						<p><a style="color: grey;" href="https://www.instagram.com/decolittlethings20/" target="_blank">Perfil de Instagram</a></p>
+						<p><a style="color: grey;" href="#" onclick="cargarSeccion(1);">¿Quién Somos?</a></p>
+						<p><a style="color: grey;" href="#" onclick="cargarSeccion(3);">Contacto</a></p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+    
+</html>
